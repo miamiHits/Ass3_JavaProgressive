@@ -1,8 +1,12 @@
 package FourInArowPCK;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
         // Creating new four in a row object.
-        new FourInArow();
+        FourInArow game = new FourInArow();
+        game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
 }

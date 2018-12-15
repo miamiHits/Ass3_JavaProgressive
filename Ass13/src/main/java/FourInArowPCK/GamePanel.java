@@ -226,7 +226,12 @@ public class GamePanel extends JPanel {
     int mgX = -1;
 
     public void calcCell() {
+        if (grid[mgX] <= -1)
+        {
+            JOptionPane.showMessageDialog(null, "Out of bounds. Try again.");
+        }
         if (mgX != -1 && mgY != -1) {
+
             if (grid[mgX] >= 0) {
                 if (turn == 0) {
                     cells[mgX][grid[mgX]] = 1;
