@@ -15,7 +15,7 @@ public class TimeoutListener {
     public void setTimeoutFlag(boolean timeoutFlag) {
         this.timeoutFlag = timeoutFlag;
 
-        //TODO: pop a notifiaction box ? 
+        //TODO: pop a notifiaction box ?
     }
 
 

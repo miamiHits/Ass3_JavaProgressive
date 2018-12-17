@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4f09503-9ecd-4c32-861a-25fcc3111d8c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/TimeoutListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/trivia.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/question2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/question2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/welcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/welcome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/TimeoutListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ass13/src/main/java/Trivia/TimeoutListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ass13/src/main/java/Trivie/question2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ass13/target/classes/Trivie/Main.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Ass13/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,46 +24,52 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="78" column="77" selection-start-line="78" selection-start-column="77" selection-end-line="78" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+            <state relative-caret-position="155">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1952#2539#0" expanded="true" />
+                <element signature="e#2538#2539#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeoutListener.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="welcome.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/welcome.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1110">
+              <caret line="82" column="35" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="82" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionFrame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2219#2358#0" expanded="true" />
+                <element signature="e#2357#2358#0" expanded="true" />
+                <element signature="e#2407#2535#0" expanded="true" />
+                <element signature="e#2534#2535#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeoutListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/TimeoutListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding>
                 <element signature="e#114#115#0" expanded="true" />
                 <element signature="e#154#155#0" expanded="true" />
                 <element signature="e#197#198#0" expanded="true" />
                 <element signature="e#231#232#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="question2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivie/question2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="381" column="43" lean-forward="true" selection-start-line="380" selection-start-column="24" selection-end-line="381" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +87,8 @@
       <file leaf-file-name="Questionnaire.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/Questionnaire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -101,6 +107,9 @@
       <find>JPanel</find>
       <find>pain</find>
       <find>num</find>
+      <find>setSize</find>
+      <find>getsc</find>
+      <find>QuestionFrame</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,10 +140,10 @@
         <option value="$PROJECT_DIR$/Ass13/src/main/java/FourInArowPCK/Main.java" />
         <option value="$PROJECT_DIR$/Ass13/src/main/java/Trivia/welcome.java" />
         <option value="$PROJECT_DIR$/Ass13/src/main/java/Trivie/Score.java" />
-        <option value="$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java" />
         <option value="$PROJECT_DIR$/Ass13/src/main/java/Trivie/question2.java" />
-        <option value="$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java" />
         <option value="$PROJECT_DIR$/Ass13/src/main/java/Trivia/TimeoutListener.java" />
+        <option value="$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java" />
+        <option value="$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java" />
       </list>
     </option>
   </component>
@@ -207,15 +216,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Trivia" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Ass3_JavaProgressive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ass3_JavaProgressive" type="462c0819:PsiDirectoryNode" />
-              <item name="Ass13" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Trivie" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -258,18 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="ConnectFourBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConnectFour.ConnectFourBoard" />
-      <module name="Ass13" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="FourInArowPCK.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.welcome">
     <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Example" />
       <module name="Ass13" />
@@ -298,6 +287,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="welcome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Trivia.welcome" />
+      <module name="Ass13" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Trivia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -338,14 +338,15 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ConnectFourBoard" />
       <item itemvalue="Application.FourInArow" />
       <item itemvalue="Application.Example" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.welcome" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.welcome" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.FourInArow" />
         <item itemvalue="Application.Main" />
@@ -387,12 +388,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25799337" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25689086" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16544567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16544567" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -419,8 +420,14 @@
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -632,38 +639,10 @@
     <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivie/Question.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivie/Score.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/welcome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/Questionnaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionBankParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="78" column="77" selection-start-line="78" selection-start-column="77" selection-end-line="78" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -677,25 +656,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/TimeoutListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="e#114#115#0" expanded="true" />
             <element signature="e#154#155#0" expanded="true" />
             <element signature="e#197#198#0" expanded="true" />
             <element signature="e#231#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/Questionnaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivie/Score.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/welcome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="82" column="35" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="82" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1952#2539#0" expanded="true" />
+            <element signature="e#2538#2539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ass13/src/main/java/Trivia/QuestionFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2219#2358#0" expanded="true" />
+            <element signature="e#2357#2358#0" expanded="true" />
+            <element signature="e#2407#2535#0" expanded="true" />
+            <element signature="e#2534#2535#0" expanded="true" />
           </folding>
         </state>
       </provider>

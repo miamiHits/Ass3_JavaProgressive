@@ -1,14 +1,9 @@
 package Trivia;
-
-import Trivia.welcome;
-import Trivie.question2;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
 
 public class Login extends JFrame
 {
@@ -73,11 +68,8 @@ public class Login extends JFrame
 				{
 					username=textField.getText();
 					dispose();
-					QuestionBankParser bankParser = new QuestionBankParser();
-					List<TriviaQuestion> questionsList =  bankParser.parseQuestionBankFile();
-					Questionnaire questionnaire = new Questionnaire(questionsList);
-					QuestionFrame questionframe = new QuestionFrame(questionnaire);
-
+					QuestionFrame questionframe = new QuestionFrame();
+					questionframe.setVisible(true);
 					
 				}
 				else
