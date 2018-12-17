@@ -9,6 +9,7 @@ public class QuestionBankParser
     public static List<TriviaQuestion> parseQuestionBankFile()
     {
         ArrayList<TriviaQuestion> result = new ArrayList<TriviaQuestion>();
+
         try
         {
             Scanner input = new Scanner(new File("trivia.txt"));
@@ -46,8 +47,11 @@ public class QuestionBankParser
 
     private static boolean questionStructureValid(String question, String correctAnswer, String wrongAnswer1, String wrongAnswer2, String wrongAnswer3)
     {
-//        return question != null && !question.isEmpty() &&
-        //TODO implement
-        return true;
+        return question != null && !question.isEmpty() &&
+                correctAnswer != null && !correctAnswer.isEmpty() &&
+                wrongAnswer1 != null && !wrongAnswer1.isEmpty() &&
+                wrongAnswer2 != null && !wrongAnswer2.isEmpty() &&
+                wrongAnswer3 != null && !wrongAnswer3.isEmpty();
+
     }
 }

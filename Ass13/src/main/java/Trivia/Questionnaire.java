@@ -8,6 +8,7 @@ public class Questionnaire
 {
     private LinkedList<TriviaQuestion> shuffledQuestions;
     private static Random random = new Random();
+    private int score = 0;
 
     public Questionnaire(List<TriviaQuestion> questions)
     {
@@ -30,9 +31,26 @@ public class Questionnaire
     //once an answer is submitted will move on to the next question
     public boolean submitAnswer(String answer)
     {
-        TriviaQuestion currentQuestion = shuffledQuestions.peek();
-        String correctAnswer = currentQuestion.getCorrectAnswer();
-        return answer.toLowerCase().equals(correctAnswer.toLowerCase());
+        boolean isAnswerCorrect = false;
+        if (answer == null || answer.isEmpty())
+        {
+            this.score -= 5;
+            isAnswerCorrect = false;
+        }
+        else
+        {
+            TriviaQuestion currentQuestion = shuffledQuestions.remove();
+            String correctAnswer = currentQuestion.getCorrectAnswer();
+            isAnswerCorrect = answer.toLowerCase().equals(correctAnswer.toLowerCase());
+            this.score += isAnswerCorrect ? 10 : -5;
+        }
+
+        return isAnswerCorrect;
+    }
+
+    public int getScore()
+    {
+        return this.score;
     }
 
     private static int[] generateRandomPermutation(int size)
@@ -56,7 +74,7 @@ public class Questionnaire
 
 
     //includes max
-    private static int getRandomNumberInRange(int min, int max)
+    public static int getRandomNumberInRange(int min, int max)
     {
 
         if (min >= max) {

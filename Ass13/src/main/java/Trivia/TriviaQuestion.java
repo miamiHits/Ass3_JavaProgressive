@@ -44,12 +44,23 @@ public class TriviaQuestion
     }
 
     public String toString() {
+        int correctAnswerIndex = Questionnaire.getRandomNumberInRange(1, 4);
+        String[] wrongAnswers = {this.wrongAnswer1, this.wrongAnswer2, this.wrongAnswer3};
         StringBuilder sb = new StringBuilder();
         sb.append("Question: " + this.question + "\n");
-        sb.append("1: " + this.correctAnswer + "\n");
-        sb.append("2: " + this.wrongAnswer1 + "\n");
-        sb.append("3: " + this.wrongAnswer2 + "\n");
-        sb.append("4: " + this.wrongAnswer3 + "\n");
+        int j = 0;
+        for (int i = 1; i <= 4; i++)
+        {
+            if (i == correctAnswerIndex)
+            {
+                sb.append(i + ": " + this.correctAnswer + "\n");
+            }
+            else
+            {
+                sb.append(i + ": " + wrongAnswers[j] + "\n");
+                j++;
+            }
+        }
         return sb.toString();
     }
 }
