@@ -22,9 +22,17 @@ public class Questionnaire
         }
     }
 
+    //returns null when there are no questions
     public TriviaQuestion peekNextQuestion()
     {
-        return shuffledQuestions.peek();
+        if (!shuffledQuestions.isEmpty())
+        {
+            return shuffledQuestions.peek();
+        }
+        else
+        {
+            return null;
+        }
     }
 
     //comparison is case insensitive.
