@@ -68,8 +68,9 @@ public class Login extends JFrame
 				{
 					username=textField.getText();
 					dispose();
-					QuestionFrame questionframe = new QuestionFrame();
-					questionframe.setVisible(true);
+					QuestionFrame frame = new QuestionFrame();
+					frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+					frame.setVisible(true);
 					
 				}
 				else

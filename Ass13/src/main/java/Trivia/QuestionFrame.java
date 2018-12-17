@@ -41,7 +41,7 @@ public class QuestionFrame extends JFrame {
         optionB = new JRadioButton();
         optionC = new JRadioButton();
         optionD = new JRadioButton();
-        selectButton = new JButton("Choose Answer and Proceed to Next Question");
+        selectButton = new JButton("Choose Answer from A-D");
         answersGroup = new ButtonGroup();
         answersGroup.add(optionA);
         answersGroup.add(optionB);
@@ -63,6 +63,7 @@ public class QuestionFrame extends JFrame {
         scoreLabel.setFont(new Font("Serif", Font.PLAIN, 36));
         scoreLabel.setVisible(true);
         add(scoreLabel, BorderLayout.AFTER_LINE_ENDS);
+        setSize(500,500);
         setVisible(true);
         setResizable(false);
         selectButton.addActionListener(new ActionListener() {

@@ -11,7 +11,7 @@ public class QuestionBankParser
 
         try
         {
-            Scanner input = new Scanner(new File("trivia.txt"));
+            Scanner input = new Scanner(new File("/Users/yardenchen/Ass3_JavaProgressive/Ass13/src/main/java/Trivia/trivia.txt"));
             LinkedList<String> lines = new LinkedList<String>();
 
             while (input.hasNext())
