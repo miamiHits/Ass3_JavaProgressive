@@ -1,4 +1,6 @@
-package Trivie;
+wwpackage Trivie;
+
+import Trivia.Login;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

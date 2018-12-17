@@ -1,4 +1,4 @@
-package Trivie;
+package Trivia;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

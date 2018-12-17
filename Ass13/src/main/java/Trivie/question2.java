@@ -208,8 +208,8 @@ public class question2 extends JFrame
 						}
 					}
 					dispose();
-					Score s=new Score();                     //Dispaly the score
-					s.setVisible(true);
+//					Score s=new Score();                     //Dispaly the score
+//					s.setVisible(true);
 				
 			}
 		});
@@ -378,8 +378,8 @@ public class question2 extends JFrame
 							}
 						}
 						dispose();
-						Score s=new Score();
-						s.setVisible(true);
+//						Score s=new Score();
+//						s.setVisible(true);
 						
 					}
 			

@@ -1,10 +1,14 @@
-package Trivie;
+package Trivia;
+
+import Trivia.welcome;
+import Trivie.question2;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
 public class Login extends JFrame
 {
@@ -69,13 +73,11 @@ public class Login extends JFrame
 				{
 					username=textField.getText();
 					dispose();
-					question2 q=new question2("/Users/yardenchen/Desktop/q.txt");
-					question2.count=0;
-					question2.i=10;
-					question2.ans_given=0;
-					question2.score=0;
-					question2.lifeline_count=1;
-					q.setVisible(true);
+					QuestionBankParser bankParser = new QuestionBankParser();
+					List<TriviaQuestion> questionsList =  bankParser.parseQuestionBankFile();
+					Questionnaire questionnaire = new Questionnaire(questionsList);
+					QuestionFrame questionframe = new QuestionFrame(questionnaire);
+
 					
 				}
 				else
