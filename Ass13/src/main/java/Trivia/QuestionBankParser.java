@@ -28,9 +28,11 @@ public class QuestionBankParser
                 String wrongAnswer2 = lines.remove();
                 String wrongAnswer3 = lines.remove();
 
-                TriviaQuestion parsedQuestion = new TriviaQuestion(question, correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3);
-
-                result.add(parsedQuestion);
+                if (questionStructureValid(question, correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3))
+                {
+                    TriviaQuestion parsedQuestion = new TriviaQuestion(question, correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3);
+                    result.add(parsedQuestion);
+                }
             }
 
         } catch (Exception e)//TODO consider catching a more specific exception
@@ -40,5 +42,12 @@ public class QuestionBankParser
         }
 
         return result;
+    }
+
+    private static boolean questionStructureValid(String question, String correctAnswer, String wrongAnswer1, String wrongAnswer2, String wrongAnswer3)
+    {
+//        return question != null && !question.isEmpty() &&
+        //TODO implement
+        return true;
     }
 }

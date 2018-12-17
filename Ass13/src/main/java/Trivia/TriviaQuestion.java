@@ -42,4 +42,14 @@ public class TriviaQuestion
     {
         return wrongAnswer3;
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Question: " + this.question + "\n");
+        sb.append("1: " + this.correctAnswer + "\n");
+        sb.append("2: " + this.wrongAnswer1 + "\n");
+        sb.append("3: " + this.wrongAnswer2 + "\n");
+        sb.append("4: " + this.wrongAnswer3 + "\n");
+        return sb.toString();
+    }
 }
