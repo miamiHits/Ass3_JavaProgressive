@@ -19,14 +19,15 @@ public class QuestionFrame extends JFrame {
     private JPanel buttonsPanel;
     private JButton startNewGameButton;
     private JLabel scoreLabel;
-
+    private TimeoutListener timeoutListener;
     private Questionnaire questionnaire;
 
 
     public QuestionFrame(){
         super("Trivia");
+        timeoutListener = new TimeoutListener(this);
         initTriviaFrame();
-        reset();
+        reset_page();
 
     }
 
@@ -41,7 +42,7 @@ public class QuestionFrame extends JFrame {
         optionB = new JRadioButton();
         optionC = new JRadioButton();
         optionD = new JRadioButton();
-        selectButton = new JButton("Choose Answer from A-D");
+        selectButton = new JButton("Choose Answer from A-D.");
         answersGroup = new ButtonGroup();
         answersGroup.add(optionA);
         answersGroup.add(optionB);
@@ -68,12 +69,12 @@ public class QuestionFrame extends JFrame {
         setResizable(false);
         selectButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                onFinishQuestion();
+                onSubmit();
             }
         } );
         startNewGameButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                reset();
+                reset_page();
             }
         } );
 
@@ -81,17 +82,18 @@ public class QuestionFrame extends JFrame {
     /**
      * Start a new game and clear previous score and data.
      */
-    private void reset() {
+    private void reset_page() {
         QuestionBankParser bankParser = new QuestionBankParser();
         List<TriviaQuestion> questionsList =  bankParser.parseQuestionBankFile();
         questionnaire = new Questionnaire(questionsList);
         scoreLabel.setText("Score: 0");
         this.selectButton.setEnabled(true);
         this.answersGroup.clearSelection();
-        onFinishQuestion();
+        TriviaQuestion triviaQuestion = questionnaire.peekNextQuestion(timeoutListener);
+        showQuestion(triviaQuestion);
     }
 
-    private void displayQuestion(TriviaQuestion triviaQuestion) {
+    private void showQuestion(TriviaQuestion triviaQuestion) {
         questionText.setText(triviaQuestion.getQuestion());
         optionA.setText(triviaQuestion.getCorrectAnswer());
         optionB.setText(triviaQuestion.getWrongAnswer1());
@@ -100,7 +102,14 @@ public class QuestionFrame extends JFrame {
 
     }
 
-    private void onFinishQuestion() {
+    public void onTimeout()
+    {
+        JOptionPane.showMessageDialog(null, "You got out of time :/ Minus 5pts and moving to next question");
+        timeoutListener.setTimeoutFlag(false);
+        onSubmit();
+    }
+
+    private void onSubmit() {
         String chosenAnswer = "";
         if (this.optionA.isSelected()) chosenAnswer = this.optionA.getText();
         if (this.optionB.isSelected()) chosenAnswer = this.optionB.getText();
@@ -108,9 +117,10 @@ public class QuestionFrame extends JFrame {
         if (this.optionD.isSelected()) chosenAnswer = this.optionD.getText();
         questionnaire.submitAnswer(chosenAnswer);
         this.scoreLabel.setText("Score: " + questionnaire.getScore());
-        TriviaQuestion triviaQuestion = questionnaire.peekNextQuestion();
+        TriviaQuestion triviaQuestion = questionnaire.peekNextQuestion(timeoutListener);
         if (triviaQuestion != null) {
-            displayQuestion(triviaQuestion);
+            JOptionPane.showMessageDialog(null, "Moving to next question ...");
+            showQuestion(triviaQuestion);
             this.answersGroup.clearSelection();
         }
         else {

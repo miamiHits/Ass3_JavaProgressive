@@ -31,7 +31,7 @@ public class Login extends JFrame
 		lblEnterUsername.setBackground(new Color(211, 211, 211));
 		lblEnterUsername.setForeground(new Color(139, 0, 0));
 		lblEnterUsername.setFont(new Font("Mongolian Baiti", Font.BOLD | Font.ITALIC, 18));
-		lblEnterUsername.setBounds(213, 155, 140, 41);
+		lblEnterUsername.setBounds(213, 155, 300, 41);
 		//contentPane.add(lblEnterUsername);
 		add(lblEnterUsername, BorderLayout.PAGE_START);
 
@@ -41,7 +41,7 @@ public class Login extends JFrame
 		//contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnRules = new JButton("Go back to game rules");
+		JButton btnRules = new JButton("Go back");
 		btnRules.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnRules.setForeground(new Color(139, 0, 0));
 		btnRules.addActionListener(new ActionListener() {
@@ -53,7 +53,7 @@ public class Login extends JFrame
 				
 			}
 		});
-		btnRules.setBounds(158, 277, 200, 23);
+		btnRules.setBounds(158, 277, 120, 23);
 		add(btnRules, BorderLayout.PAGE_END);
 		//contentPane.add(btnRules);
 		

@@ -43,6 +43,23 @@ public class TriviaQuestion
         return wrongAnswer3;
     }
 
+    public void setCorrectAnswer(String correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
+
+    public void setWrongAnswer1(String wrongAnswer1) {
+        this.wrongAnswer1 = wrongAnswer1;
+    }
+
+    public void setWrongAnswer2(String wrongAnswer2) {
+        this.wrongAnswer2 = wrongAnswer2;
+    }
+
+    public void setWrongAnswer3(String wrongAnswer3) {
+        this.wrongAnswer3 = wrongAnswer3;
+    }
+
+
     public String toString() {
         int correctAnswerIndex = Questionnaire.getRandomNumberInRange(1, 4);
         String[] wrongAnswers = {this.wrongAnswer1, this.wrongAnswer2, this.wrongAnswer3};

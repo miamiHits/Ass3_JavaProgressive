@@ -1,11 +1,10 @@
 package Trivia;
 
 import javax.swing.*;
+import javax.swing.Timer;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Questionnaire
 {
@@ -26,6 +25,25 @@ public class Questionnaire
             int nextQuestion = randomPermutationIndexes[i];
             this.shuffledQuestions.add(questions.get(nextQuestion));
         }
+
+        shuffleAnswers();
+    }
+
+    private void shuffleAnswers() {
+        for (TriviaQuestion triviaQuestion : shuffledQuestions)
+        {
+            ArrayList<String> permutations = new ArrayList();
+            permutations.add(triviaQuestion.getCorrectAnswer());
+            permutations.add(triviaQuestion.getWrongAnswer1());
+            permutations.add(triviaQuestion.getWrongAnswer2());
+            permutations.add(triviaQuestion.getWrongAnswer3());
+            Collections.shuffle(permutations);
+            triviaQuestion.setCorrectAnswer(permutations.get(0));
+            triviaQuestion.setWrongAnswer1(permutations.get(1));
+            triviaQuestion.setWrongAnswer2(permutations.get(2));
+            triviaQuestion.setWrongAnswer3(permutations.get(3));
+        }
+
     }
 
     //returns null when there are no questions
