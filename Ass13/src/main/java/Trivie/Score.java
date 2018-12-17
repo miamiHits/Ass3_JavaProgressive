@@ -1,4 +1,4 @@
-wwpackage Trivie;
+package Trivie;
 
 import Trivia.Login;
 
