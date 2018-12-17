@@ -1,14 +1,20 @@
 package Trivia;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
 public class Questionnaire
 {
+    public static int TIME_LIMIT_IN_MILLISECONDS = 5000; // TODO set proper value
+
     private LinkedList<TriviaQuestion> shuffledQuestions;
     private static Random random = new Random();
     private int score = 0;
+    private Timer timer;
 
     public Questionnaire(List<TriviaQuestion> questions)
     {
@@ -23,8 +29,18 @@ public class Questionnaire
     }
 
     //returns null when there are no questions
-    public TriviaQuestion peekNextQuestion()
+    public TriviaQuestion peekNextQuestion(final TimeoutListener timeoutListener)
     {
+        this.timer = new Timer(TIME_LIMIT_IN_MILLISECONDS, new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                timeoutListener.setTimeoutFlag(true);
+                submitAnswer(null);
+            }
+        });
+        this.timer.start();
         if (!shuffledQuestions.isEmpty())
         {
             return shuffledQuestions.peek();
@@ -53,6 +69,7 @@ public class Questionnaire
             this.score += isAnswerCorrect ? 10 : -5;
         }
 
+        this.timer.stop();
         return isAnswerCorrect;
     }
 
